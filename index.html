@@ -17,6 +17,7 @@
         <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-r29vJYhbzY/2WvUfViMHW2MB2pO0Nwv3GoZEQcswqMh7Ed1BWiR9DNkNF2m6rVZJDIgpkIt6HaF/SXdjNgfSOg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <style>
 
                 .custom-card {
@@ -101,7 +102,57 @@
                     font-size: 24px; /* Adjust the font size as needed */
                     font-weight: bold;
                 }
-
+                .inquiry-container {
+                    background-image: url('email-icon.png');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    padding: 20px;
+                    text-align: center;
+                    border-left: 1px solid white;
+                    border-right: 1px solid white;
+                  }
+                
+                  .inquiry-container input[type="text"],
+                  .inquiry-container textarea {
+                    width: 100%;
+                    margin-bottom: 10px;
+                    padding: 10px;
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                    box-sizing: border-box;
+                  }
+                
+                  .inquiry-container input[type="submit"] {
+                    background-color: #4CAF50;
+                    color: white;
+                    padding: 10px 20px;
+                    border: none;
+                    border-radius: 4px;
+                    cursor: pointer;
+                  }
+                
+                  .email-icon {
+                    display: none;
+                  }
+                
+                  @media (min-width: 768px) {
+                    .inquiry-container {
+                      background-image: none;
+                      text-align: left;
+                      border: none;
+                      border-left: 1px solid white;
+                      border-right: 1px solid white;
+                    }
+                
+                    .email-icon {
+                      display: inline-block;
+                      width: 50px;
+                      height: 50px;
+                      background-image: url('email-icon.png');
+                      background-repeat: no-repeat;
+                      background-position: center;
+                    }
+                  }
         </style>
 
     </head>
@@ -118,10 +169,11 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto my-2 my-lg-0">
                         <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#subscription">Subscription</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#session">Session</a></li>
                         <li class="nav-item"><a class="nav-link" href="#community">Community</a></li>
                         <li class="nav-item"><a class="nav-link" href="#merchandise">Merchandise</a></li>
                         <li class="nav-item"><a class="nav-link" href="#locate">Locate Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#inquiry">Inquiry</a></li>
                     </ul>
                 </div>
             </div>
@@ -147,69 +199,54 @@
                         <h2 class="text-white mt-0">About</h2>
                         <hr class="divider divider-light" />
                         <p class="text-white-75 mb-4">Our gym business was born out of a passion for promoting health and well-being in our community. Established in 2018, we have become a cornerstone of the fitness industry, offering a wide range of top-notch facilities and services. With a commitment to excellence, we strive to create an inclusive and motivating environment for individuals of all fitness levels. Our experienced team of trainers and instructors is dedicated to guiding and inspiring our members on their fitness journey, providing personalized workout programs and expert advice. From state-of-the-art equipment to innovative fitness classes, we continuously invest in cutting-edge resources to ensure our members have access to the latest advancements in the industry. With a strong emphasis on community, we foster a sense of belonging and camaraderie, organizing social events and challenges that bring our members together. We are proud to be more than just a gym; we are a place where individuals can transform their lives, build lasting friendships, and achieve their fitness goals.</p>
-                        <a class="btn btn-light btn-xl" href="#subscription">Get Started!</a>
+                        <a class="btn btn-light btn-xl" href="#session">Get Started!</a>
                     </div>
                 </div>
             </div>
         </section>
         <!-- skills-->
-        <section class="page-section" id="subscription">
+        <section class="page-section" id="session">
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-8 text-center">
-                        <h2 class="mt-0 text-primary">Subscription</h2>
+                        <h2 class="mt-0 text-primary">Session</h2>
                         <hr class="divider divider-light" />
                     </div>
                 </div>
         
                 <div class="row justify-content-center">
-                    <div class="col-6 col-md-3">
+                    <div class="col-12 col-md-4">
                         <div class="d-flex justify-content-center">
                             <div class="card text-center custom-card">
-                                <h3>Walk In</h3>
-                                <p>Access to gym facilities</p>
-                                <p>Personalized workout programs</p>
-                                <p>Group fitness classes</p>
-                                <p class="price">P70/day</p>
+                                <h3>GYM</h3>
+                                <p>Everyday from 9am-10pm</p>
+                                <p class="price">P70/session</p>
+                                <p class="price">P900/month</p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-6 col-md-3">
+                    <div class="col-12 col-md-4">
                         <div class="d-flex justify-content-center">
                             <div class="card text-center custom-card">
-                                <h3>1 Month Membership</h3>
-                                <p>Access to gym facilities</p>
-                                <p>Personalized workout programs</p>
-                                <p>Group fitness classes</p>
-                                <p class="price">P800.00/month</p>
+                                <h3>ZUMBA</h3>
+                                <p>Tuesday, Thursday @7:30PM</p>
+                                <p class="price">P75/session</p>
                             </div>
                         </div>
                     </div>
         
-                    <div class="col-6 col-md-3">
+                    <div class="col-12 col-md-4">
                         <div class="d-flex justify-content-center">
                             <div class="card text-center custom-card">
-                                <h3>3 Months Membership</h3>
-                                <p>Access to all basic features</p>
-                                <p>One-on-one personal training</p>
-                                <p>Special fitness programs</p>
-                                <p class="price">P2000.00</p>
+                                <h3>FOR PERSONAL TRAINER</h3>
+                                <p>Everyday from 9am-10pm</p>
+                                <p class="price">P350/session</p>
+                                <p class="price">P7500/month</p>
                             </div>
                         </div>
                     </div>
                     
-                    <div class="col-6 col-md-3">
-                        <div class="d-flex justify-content-center">
-                            <div class="card text-center custom-card">
-                                <h3>1 Year Membership</h3>
-                                <p>Access to all premium features</p>
-                                <p>Unlimited guest passes</p>
-                                <p>Nutritional counseling</p>
-                                <p class="price">P9000.00</p>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
@@ -272,7 +309,7 @@
 
 
                     <div class="row justify-content-center">
-                        <div class="col-6 col-md-3">
+                        <div class="col-12 col-md-3">
                             <div class="d-flex justify-content-center">
                                 <div class="card text-center custom-card">
                                     <img src="assets/item1.jpg" alt="Item 1" height="450">
@@ -282,7 +319,7 @@
                             </div>
                         </div>
     
-                        <div class="col-6 col-md-3">
+                        <div class="col-12 col-md-3">
                             <div class="d-flex justify-content-center">
                                 <div class="card text-center custom-card">
                                     <img src="assets/item2.jpg" alt="Item 1" height="450">
@@ -292,7 +329,7 @@
                             </div>
                         </div>
             
-                        <div class="col-6 col-md-3">
+                        <div class="col-12 col-md-3">
                             <div class="d-flex justify-content-center">
                                 <div class="card text-center custom-card">
                                     <img src="assets/item3.jpg" alt="Item 1" height="450">
@@ -302,7 +339,7 @@
                             </div>
                         </div>
                         
-                        <div class="col-6 col-md-3">
+                        <div class="col-12 col-md-3">
                             <div class="d-flex justify-content-center">
                                 <div class="card text-center custom-card">
                                     <img src="assets/item4.jpg" alt="Item 1" height="450">
@@ -320,9 +357,9 @@
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-8 text-center">
-                        <h2 class="mt-0">Locate us</h2>
+                        <h2 class="mt-0 text-primary">Locate us</h2>
                         <hr class="divider divider-light" />
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3859.791850985061!2d121.0536310757903!3d14.667750775427743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b7fa7a114a29%3A0x682a1478d6b8a3bc!2sMJeshter%20fitness%20gym!5e0!3m2!1sfil!2sph!4v1689322374552!5m2!1sfil!2sph" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3859.791850985061!2d121.0536310757903!3d14.667750775427743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b7fa7a114a29%3A0x682a1478d6b8a3bc!2sMJeshter%20fitness%20gym!5e0!3m2!1sfil!2sph!4v1689322374552!5m2!1sfil!2sph" width="100%" height="400" style="border: 4px solid RGBA(244, 98, 58, var(--bs-bg-opacity, 1)); border-radius: 15px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
                     </div>
                 </div>
@@ -334,6 +371,39 @@
                     <div class="text">
                         <h2 class="mb-4 fst-italic text-white">"Your commitment in the gym today paves the way for the strength and triumph you'll embrace tomorrow."</h2>
                     </div>   
+            </div>
+        </section>
+
+        <!-- About-->
+        <section class="page-section bg-primary" id="inquiry">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <h2 class="text-white mt-0">Inquiry</h2>
+                        <hr class="divider divider-light" />
+                        <div class="col-12">
+                            <div class="row">
+                                <!-- <div class="col-6">
+                                  <div class="inquiry-container">
+                                    <form>
+                                      <input type="text" id="name" name="name" placeholder="Your Name" required>
+                                      <input type="text" id="email" name="email" placeholder="Your Email" required>
+                                      <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                                      <input type="submit" value="Submit" class="bg-dark text-white">
+                                    </form>
+                                    <div class="email-icon"></div>
+                                  </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="inquiry-container">
+                                        <img src="assets/email.png" alt="" srcset="" height="50%" width="50%">
+                                    </div>
+                                </div> -->
+                                <h1 class="text-white">IN DEVELOPMENT</h1>
+                              </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
